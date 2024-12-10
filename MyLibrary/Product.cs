@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace MyLibrary
 {
-	public class Product
+	public class Product(int id, string name, decimal unitPrice, int unitsInStock)
 
 	{
 		//Propiedades
-		
-		public string Name { get; set; }
-		public decimal UnitPrice { get; set; }
-		public int UnitsInStock { get; set; }
 
+		public int Id  => id;
+		public string Name => name;
+		public decimal UnitPrice => unitPrice;
+		public int UnitsInStock => unitsInStock;
+
+		
 	}
 }
